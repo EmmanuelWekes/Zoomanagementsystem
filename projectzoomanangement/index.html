@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Zoo Management System</h1>
+    </header>
+    <main>
+        <section id="animal-management">
+            <h2>Animal Management</h2>
+            <form id="add-animal-form">
+                <label for="animal-name">Name:</label>
+                <input type="text" id="animal-name" name="animal-name" required>
+                
+                <label for="animal-species">Species:</label>
+                <input type="text" id="animal-species" name="animal-species" required>
+                
+                <label for="animal-age">Age:</label>
+                <input type="number" id="animal-age" name="animal-age" required>
+                
+                <button type="submit">Add Animal</button>
+            </form>
+            <div id="animal-list">
+                <h3>Animal Records</h3>
+                <ul></ul>
+            </div>
+        </section>
+
+        <section id="enclosure-management">
+            <h2>Enclosure Management</h2>
+            <form id="assign-enclosure-form">
+                <label for="animal-id">Animal ID:</label>
+                <input type="text" id="animal-id" name="animal-id" required>
+                
+                <label for="enclosure-name">Enclosure:</label>
+                <input type="text" id="enclosure-name" name="enclosure-name" required>
+                
+                <button type="submit">Assign Enclosure</button>
+            </form>
+            <div id="enclosure-list">
+                <h3>Enclosure Assignments</h3>
+                <ul></ul>
+            </div>
+        </section>
+
+        <section id="schedule-management">
+            <h2>Schedule Management</h2>
+            <form id="schedule-form">
+                <label for="animal-id-schedule">Animal ID:</label>
+                <input type="text" id="animal-id-schedule" name="animal-id-schedule" required>
+                
+                <label for="schedule-type">Schedule Type:</label>
+                <select id="schedule-type" name="schedule-type" required>
+                    <option value="feeding">Feeding</option>
+                    <option value="medical">Medical Checkup</option>
+                </select>
+                
+                <label for="schedule-date">Date:</label>
+                <input type="date" id="schedule-date" name="schedule-date" required>
+                
+                <button type="submit">Add Schedule</button>
+            </form>
+            <div id="schedule-list">
+                <h3>Schedules</h3>
+                <ul></ul>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
