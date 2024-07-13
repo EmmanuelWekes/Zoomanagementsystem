@@ -13,65 +13,123 @@
     <main>
         <section id="animal-management">
             <h2>Animal Management</h2>
-            <form id="add-animal-form">
-                <label for="animal-name">Name:</label>
-                <input type="text" id="animal-name" name="animal-name" required>
-                
-                <label for="animal-species">Species:</label>
-                <input type="text" id="animal-species" name="animal-species" required>
-                
-                <label for="animal-age">Age:</label>
-                <input type="number" id="animal-age" name="animal-age" required>
-                
-                <button type="submit">Add Animal</button>
-            </form>
-            <div id="animal-list">
-                <h3>Animal Records</h3>
-                <ul></ul>
+            <div class="management-content">
+                <form id="add-animal-form">
+                    <label for="animal-name">Name:</label>
+                    <input type="text" id="animal-name" name="animal-name" required>
+                    
+                    <label for="animal-species">Species:</label>
+                    <input type="text" id="animal-species" name="animal-species" required>
+                    
+                    <label for="animal-age">Age:</label>
+                    <input type="number" id="animal-age" name="animal-age" required>
+                    
+                    <button type="submit">Add Animal</button>
+                </form>
+                <div id="animal-list">
+                    <h3>Animal Records</h3>
+                    <ul>
+                        <li>
+                            <strong>Lion</strong> - Panthera leo<br>
+                            Age: 8 years
+                        </li>
+                        <li>
+                            <strong>Giraffe</strong> - Giraffa camelopardalis<br>
+                            Age: 5 years
+                        </li>
+                        <li>
+                            <strong>Elephant</strong> - Loxodonta africana<br>
+                            Age: 12 years
+                        </li>
+                        <li>
+                            <strong>Zebra</strong> - Equus quagga<br>
+                            Age: 6 years
+                        </li>
+                        <li>
+                            <strong>Tiger</strong> - Panthera tigris<br>
+                            Age: 9 years
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="enclosure-management">
             <h2>Enclosure Management</h2>
-            <form id="assign-enclosure-form">
-                <label for="animal-id">Animal ID:</label>
-                <input type="text" id="animal-id" name="animal-id" required>
-                
-                <label for="enclosure-name">Enclosure:</label>
-                <input type="text" id="enclosure-name" name="enclosure-name" required>
-                
-                <button type="submit">Assign Enclosure</button>
-            </form>
-            <div id="enclosure-list">
-                <h3>Enclosure Assignments</h3>
-                <ul></ul>
+            <div class="management-content">
+                <form id="assign-enclosure-form">
+                    <label for="animal-id">Animal ID:</label>
+                    <input type="text" id="animal-id" name="animal-id" required>
+                    
+                    <label for="enclosure-name">Enclosure:</label>
+                    <input type="text" id="enclosure-name" name="enclosure-name" required>
+                    
+                    <button type="submit">Assign Enclosure</button>
+                </form>
+                <div id="enclosure-list">
+                    <h3>Enclosure Assignments</h3>
+                    <ul>
+                        <li>
+                            <strong>Lion</strong> - Lion Enclosure
+                        </li>
+                        <li>
+                            <strong>Giraffe</strong> - Savanna Enclosure
+                        </li>
+                        <li>
+                            <strong>Elephant</strong> - Elephant Habitat
+                        </li>
+                        <li>
+                            <strong>Zebra</strong> - Zebra Area
+                        </li>
+                        <li>
+                            <strong>Tiger</strong> - Tiger Zone
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="schedule-management">
             <h2>Schedule Management</h2>
-            <form id="schedule-form">
-                <label for="animal-id-schedule">Animal ID:</label>
-                <input type="text" id="animal-id-schedule" name="animal-id-schedule" required>
-                
-                <label for="schedule-type">Schedule Type:</label>
-                <select id="schedule-type" name="schedule-type" required>
-                    <option value="feeding">Feeding</option>
-                    <option value="medical">Medical Checkup</option>
-                </select>
-                
-                <label for="schedule-date">Date:</label>
-                <input type="date" id="schedule-date" name="schedule-date" required>
-                
-                <button type="submit">Add Schedule</button>
-            </form>
-            <div id="schedule-list">
-                <h3>Schedules</h3>
-                <ul></ul>
+            <div class="management-content">
+                <form id="schedule-form">
+                    <label for="animal-id-schedule">Animal ID:</label>
+                    <input type="text" id="animal-id-schedule" name="animal-id-schedule" required>
+                    
+                    <label for="schedule-type">Schedule Type:</label>
+                    <select id="schedule-type" name="schedule-type" required>
+                        <option value="feeding">Feeding</option>
+                        <option value="medical">Medical Checkup</option>
+                    </select>
+                    
+                    <label for="schedule-date">Date:</label>
+                    <input type="date" id="schedule-date" name="schedule-date" required>
+                    
+                    <button type="submit">Add Schedule</button>
+                </form>
+                <div id="schedule-list">
+                    <h3>Schedules</h3>
+                    <ul>
+                        <li>
+                            <strong>Lion</strong> - Feeding - 2024-07-15
+                        </li>
+                        <li>
+                            <strong>Giraffe</strong> - Medical Checkup - 2024-07-17
+                        </li>
+                        <li>
+                            <strong>Elephant</strong> - Feeding - 2024-07-16
+                        </li>
+                        <li>
+                            <strong>Zebra</strong> - Feeding - 2024-07-18
+                        </li>
+                        <li>
+                            <strong>Tiger</strong> - Medical Checkup - 2024-07-20
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
     <script src="script.js"></script>
 </body>
 </html>
-
